@@ -1,0 +1,103 @@
+:root {
+  --primary-light: #ddd;
+  --primary-dark: #222831;
+  --secondary-dark: #393e46;
+  --secondary-dark-hover: #4a4f57;
+  --secondary-dark-active: #5b5f68;
+  --header: #111720;
+  --primary-yellow: #fac650;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--primary-light);
+}
+.scoreText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  border: 3px solid var(--primary-light);
+}
+
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
+
+.blok1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.blok2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+#rock {
+  margin-right: 50px;
+}
+#paper {
+  margin-right: 50px;
+}
+#scissors {
+  margin-right: 50px;
+}
+
+.sign {
+}
+
+button {
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.score {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn {
+  border-radius: 10px;
+  background-color: var(--secondary-dark);
+}
+
+.btn-square {
+  width: 160px;
+  height: 160px;
+}
+
+.btn:hover {
+  background-color: var(--secondary-dark-hover);
+}
+
+.btn:active {
+  background-color: var(--secondary-dark-active);
+}
+
+.sign {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
